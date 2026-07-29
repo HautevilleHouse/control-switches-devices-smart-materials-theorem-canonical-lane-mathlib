@@ -1,0 +1,16 @@
+import canonicalLaneMathlib.AdmissibleClass
+import ControlSwitchesDevicesSmartMaterialsTheoremCanonicalLaneLean.BridgeLemmas
+import ControlSwitchesDevicesSmartMaterialsTheoremCanonicalLaneLean.GateLemmas
+
+namespace HautevilleHouse
+namespace ControlSwitchesDevicesSmartMaterialsTheoremCanonicalLaneLean
+
+def ConstrainedControlSwitchesDevicesSmartMaterialsClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_control_switches_devices_smart_materials_endgame (A : AdmissibleClass) :
+    ConstrainedControlSwitchesDevicesSmartMaterialsClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end ControlSwitchesDevicesSmartMaterialsTheoremCanonicalLaneLean
+end HautevilleHouse

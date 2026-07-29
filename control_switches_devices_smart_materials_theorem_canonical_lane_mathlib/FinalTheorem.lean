@@ -1,0 +1,9 @@
+import control_switches_devices_smart_materials_theorem_canonical_lane_mathlib.GateLemmas
+namespace HautevilleHouse
+namespace control_switches_devices_smart_materials_theorem_canonical_lane_mathlib
+structure ConstrainedTheoremClosure where
+  admissible :: intro :: constraint :: consequence :: proof ::
+theorem canonical : ConstrainedTheoremClosure :=
+  ConstrainedTheoremClosure.intro
+end control_switches_devices_smart_materials_theorem_canonical_lane_mathlib
+end HautevilleHouse
